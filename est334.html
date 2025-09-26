@@ -3,60 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio EST334 - [Tu Nombre]</title>
+  <title>Portafolio EST334 - Paul Wenceslao Condori Garcia</title>
   <style>
+    /* ====== ESTILOS GLOBALES ====== */
     body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      background: #f4f6f9;
       color: #333;
-    }
-    header {
-      background: #004080;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 30px;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #004080;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin: 10px 0;
     }
     a {
       text-decoration: none;
-      color: #004080;
-      font-weight: bold;
+      color: #0077cc;
+      font-weight: 600;
     }
     a:hover {
-      text-decoration: underline;
+      color: #005fa3;
     }
+
+    /* ====== CABECERA ====== */
+    header {
+      background: linear-gradient(135deg, #004080, #0077cc);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+    }
+
+    /* ====== CONTENIDO ====== */
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      font-size: 1.8em;
+      color: #004080;
+      margin-bottom: 15px;
+      border-left: 6px solid #0077cc;
+      padding-left: 10px;
+    }
+
+    /* ====== TARJETAS ====== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #0077cc;
+    }
+    .card p {
+      margin: 10px 0 15px;
+      font-size: 0.95em;
+      line-height: 1.4;
+    }
+    .card a {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #0077cc;
+      color: white;
+      border-radius: 6px;
+      font-size: 0.9em;
+      transition: background 0.2s;
+    }
+    .card a:hover {
+      background: #005fa3;
+    }
+
+    /* ====== PIE DE PÁGINA ====== */
     footer {
       text-align: center;
-      padding: 15px;
-      background: #eee;
-      margin-top: 20px;
+      padding: 20px;
+      background: #e9ecef;
       font-size: 0.9em;
+      margin-top: 40px;
+      border-top: 1px solid #ccc;
     }
   </style>
 </head>
@@ -64,35 +109,58 @@
 
   <header>
     <h1>Portafolio EST334</h1>
-    <p>[Tu Nombre]</p>
+    <p>[Tu Nombre] - Universidad [X]</p>
   </header>
 
   <main>
+    <!-- Sobre mí -->
     <section>
       <h2>Sobre mí</h2>
-      <p>Soy estudiante del curso Estadistica Espacial. Aquí presento los trabajos y proyectos encargados durante el ciclo.</p>
+      <p>Soy estudiante del curso EST334. En este portafolio encontrarás mis trabajos y proyectos desarrollados durante el ciclo académico.</p>
     </section>
 
+    <!-- Trabajos -->
     <section>
       <h2>Trabajos Encargados</h2>
-      <ul>
-        <li><a href="trabajos/trabajo1.html" target="_blank">Trabajo 1: [Tema]</a></li>
-        <li><a href="trabajos/trabajo2.html" target="_blank">Trabajo 2: [Tema]</a></li>
-        <li><a href="trabajos/trabajo3.html" target="_blank">Trabajo 3: [Tema]</a></li>
-      </ul>
+      <div class="grid">
+        <div class="card">
+          <h3>Trabajo 1</h3>
+          <p>Descripción breve del tema o consigna.</p>
+          <a href="trabajos/trabajo1.html" target="_blank">Ver trabajo</a>
+        </div>
+        <div class="card">
+          <h3>Trabajo 2</h3>
+          <p>Descripción breve del tema o consigna.</p>
+          <a href="trabajos/trabajo2.html" target="_blank">Ver trabajo</a>
+        </div>
+        <div class="card">
+          <h3>Trabajo 3</h3>
+          <p>Descripción breve del tema o consigna.</p>
+          <a href="trabajos/trabajo3.html" target="_blank">Ver trabajo</a>
+        </div>
+      </div>
     </section>
 
+    <!-- Proyectos -->
     <section>
       <h2>Proyectos</h2>
-      <ul>
-        <li><a href="https://github.com/kyo3773pw/ProyectoX" target="_blank">Proyecto X en GitHub</a></li>
-        <li><a href="https://kyo3773pw.github.io/ProyectoY/" target="_blank">Proyecto Y (demo online)</a></li>
-      </ul>
+      <div class="grid">
+        <div class="card">
+          <h3>Proyecto X</h3>
+          <p>Proyecto desarrollado en Python y Flask.</p>
+          <a href="https://github.com/kyo3773pw/ProyectoX" target="_blank">Ver en GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Proyecto Y</h3>
+          <p>Aplicación web desplegada en GitHub Pages.</p>
+          <a href="https://kyo3773pw.github.io/ProyectoY/" target="_blank">Ver demo</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 - Portafolio académico de Condori Garcia Paul Wenceslao</p>
+    <p>© 2025 - Portafolio académico de Paul Wenceslao Condori Garcia</p>
   </footer>
 
 </body>
