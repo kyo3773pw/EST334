@@ -9,25 +9,25 @@
     body {
       font-family: "Segoe UI", Roboto, Arial, sans-serif;
       margin: 0;
-      background: #f4f6f9;
-      color: #333;
+      background: #1e1e1e; /* Dark background */
+      color: #e0e0e0; /* Light text for contrast */
     }
     a {
       text-decoration: none;
-      color: #0077cc;
+      color: #4da8ff; /* Brighter blue for links */
       font-weight: 600;
     }
     a:hover {
-      color: #005fa3;
+      color: #80bfff; /* Lighter blue on hover */
     }
 
     /* ====== CABECERA ====== */
     header {
-      background: linear-gradient(135deg, #004080, #0077cc);
-      color: white;
+      background: linear-gradient(135deg, #003366, #0066cc); /* Darker gradient */
+      color: #ffffff;
       padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Stronger shadow for depth */
     }
     header h1 {
       margin: 0;
@@ -49,9 +49,9 @@
     }
     section h2 {
       font-size: 1.8em;
-      color: #004080;
+      color: #4da8ff; /* Bright blue for section headers */
       margin-bottom: 15px;
-      border-left: 6px solid #0077cc;
+      border-left: 6px solid #4da8ff; /* Matching border color */
       padding-left: 10px;
     }
 
@@ -62,46 +62,48 @@
       gap: 20px;
     }
     .card {
-      background: white;
+      background: #2a2a2a; /* Dark card background */
       border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
       transition: transform 0.2s, box-shadow 0.2s;
     }
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
     }
     .card h3 {
       margin-top: 0;
-      color: #0077cc;
+      color: #4da8ff; /* Bright blue for card titles */
     }
     .card p {
       margin: 10px 0 15px;
       font-size: 0.95em;
       line-height: 1.4;
+      color: #d0d0d0; /* Slightly dimmed text for contrast */
     }
     .card a {
       display: inline-block;
       padding: 8px 14px;
-      background: #0077cc;
-      color: white;
+      background: #4da8ff; /* Bright blue buttons */
+      color: #ffffff;
       border-radius: 6px;
       font-size: 0.9em;
       transition: background 0.2s;
     }
     .card a:hover {
-      background: #005fa3;
+      background: #80bfff; /* Lighter blue on hover */
     }
 
     /* ====== PIE DE PÁGINA ====== */
     footer {
       text-align: center;
       padding: 20px;
-      background: #e9ecef;
+      background: #2a2a2a; /* Dark footer background */
       font-size: 0.9em;
       margin-top: 40px;
-      border-top: 1px solid #ccc;
+      border-top: 1px solid #444; /* Darker border */
+      color: #d0d0d0; /* Light text */
     }
   </style>
 </head>
@@ -109,7 +111,7 @@
 
   <header>
     <h1>Portafolio EST334</h1>
-    <p>[Tu Nombre] - Universidad [X]</p>
+    <p>Paul Wenceslao Condori Garcia - Universidad [Nombre de la Universidad]</p>
   </header>
 
   <main>
@@ -124,19 +126,24 @@
       <h2>Trabajos Encargados</h2>
       <div class="grid">
         <div class="card">
-          <h3>Trabajo 1</h3>
-          <p>Descripción breve del tema o consigna.</p>
-          <a href="trabajos/trabajo1.html" target="_blank">Ver trabajo</a>
+          <h3>Campo Gaussiano</h3>
+          <p>Análisis de campo gaussiano utilizando datos de 2014-2024 con kriging y variogramas.</p>
+          <a href="./campo gaussiano/campo_gaussiano.pdf" target="_blank">Ver PDF</a>
         </div>
         <div class="card">
-          <h3>Trabajo 2</h3>
-          <p>Descripción breve del tema o consigna.</p>
-          <a href="trabajos/trabajo2.html" target="_blank">Ver trabajo</a>
+          <h3>Matrices Moran, Geary y Hotspots</h3>
+          <p>Estudio de matrices de pesos, índices de Moran, Geary y análisis de hotspots.</p>
+          <a href="./matrices_moran_gery_hotspots/_EST_ESP_matrices_de_pesos__i_de_moran_geary_and_hostpost.pdf" target="_blank">Ver PDF</a>
         </div>
         <div class="card">
-          <h3>Trabajo 3</h3>
-          <p>Descripción breve del tema o consigna.</p>
-          <a href="trabajos/trabajo3.html" target="_blank">Ver trabajo</a>
+          <h3>Muestreo Bootstrap</h3>
+          <p>Análisis de correlación utilizando técnicas de muestreo bootstrap.</p>
+          <a href="./muestreo bootstrap/muestreo_bootstrap.pdf" target="_blank">Ver PDF</a>
+        </div>
+        <div class="card">
+          <h3>Posicionamiento de Información</h3>
+          <p>Estudio sobre posicionamiento de información con datos seleccionados.</p>
+          <a href="./posicionamiento de informacion/_EST_ESP_posicionamiento_de_informacion.pdf" target="_blank">Ver PDF</a>
         </div>
       </div>
     </section>
